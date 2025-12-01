@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/scipo.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.withbg{background-color:rgba(255,255,255,0.7);}
+		.reveal .slides section .highlight-red {color: #FF6666; }
+		.reveal .slides section .highlight-green {color: #66ff66; }
+		.reveal .slides section .highlight-blue {color: #3399ff; }
+
+		  /* slide-level wrapper */
+		  .table-slide {
+		    font-size: 0.6em;    
+		    line-height: 1.25;
+		  }
+
+		  /* scroll area so wide tables don't overflow */
+		  .table-slide .table-scroll {
+		    max-height: 60vh;
+		    overflow-y: auto;
+		    overflow-x: hidden;
+		  }
+
+		  /* clean table look */
+		  .table-slide table {
+		    width: 100%;
+		    border-collapse: collapse;
+		  }
+
+		  .table-slide th,
+		  .table-slide td {
+		    padding: 0.25em 0.4em;
+		    text-align: right;
+
+		    /* remove vertical lines */
+		    border-left: none;
+		    border-right: none;
+
+		    /* subtle horizontal separators only */
+		    border-top: none;
+		    border-bottom: 1px solid #ccc;
+		  }
+
+		  /* header row slightly stronger line */
+		  .table-slide thead th {
+		    border-bottom: 2px solid #999;
+		    text-align: left;
+		  }
+
+		  /* first column always left-aligned */
+		  .table-slide th:first-child,
+		  .table-slide td:first-child {
+		    text-align: left;
+		  }
+	</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+				<section data-background-size="100%" data-background-iframe="20220315_page.html">
+				<div class="withbg">
+					<br>
+					<h3><b>The Effect of State Repression on Online Dissent:<br>Evidence from Hong Kong</b></h3>
+
+					<h4 style ="color:#333"><b>Justin Chun-ting Ho</b><br><small>National Yang Ming Chiao Tung University</small></h4>
+
+				</div>
+			</section>
+			<section>
+				<div class="withbg">
+					<h3>Hong Kong National Security Law (2020)</h3>
+					<p><ul>
+						<li>2019 Hong Kong Protests</li>
+						<li>A draconian law that established crimes of secession, subversion, terrorism, and collusion with foreign organisations</li>
+						<li>Chilling effect across Hong Kong<small>political groups disbanded, pro-democracy activists fled, people took down social media accounts etc</small></li>
+						<li>At least 341 were arrested as of 1 September 2025</li>
+					</ul></p>
+				</div>
+			</section>
+			<section>
+				<h2>repression-mobilization nexus</h2>
+			</section>
+			<section>
+				<div class="withbg">
+					<h3>Effect of State Repression</h3>
+					<p><ul>
+						<li>Deterence<br><small>（Franceschini and Nesossi 2018; Tilly 1978; Boykoff 2006）</small></li>
+						<li>Backlash<br><small>（Pan and Siegel 2020; Sullivan and Davenport 2017; Young 2021）</small></li>
+						<li>Tactical Shift<br><small>（Honari 2018; Francisco 1995; O’Brien and Deng 2015）</small></li>
+					</ul></p>
+				</div>
+			</section>
+						<section>
+							<div class="withbg">
+								<h3>Effect of State Repression</h3>
+								<ul>
+									<h4>What we know:</h4>
+									<li>The effect of <span class="highlight-red">offline</span> repression on <span class="highlight-red">offline</span> dissent</li>
+									<li>The effect of <span class="highlight-blue">online</span> repression on <span class="highlight-blue">online</span> dissent</li>
+									<br>
+									<h4>What we don't know:</h4>
+									<li>The effect of <span class="highlight-red">offline</span> repression on <span class="highlight-blue">online</span> dissent</li>
+								</ul></p>
+							</div>
+						</section>
+						<section>
+							<b>What is the effect of the NSL on <br>online dissent in Hong Kong?</b>
+						</section>
+						<section>
+							<div class="withbg">
+								<h3>Why does online dissent matter?</h3>
+								<ul>
+									<li>The role of social media within authoritarian regimes</li>											
+									<li>The importance of social media in Hong Kong's social movement</li>
+									<li>Cycle of contention:<br> The absence of mobilisation does not mean the disappearance of the social movement</li>
+								</ul>
+							</div>
+						</section>
+						<section>
+							<section>
+								<div class="withbg">
+									<h3>Data</h3>
+									<p><ol>
+										<li>Identifying Facebook pages through CrowdTangle<br><small>Search query based on key slogans: 1878 pages</small></li>
+										<li>Manually coded all of the pages<br><small>507 Business, 80 Community, 301 Influencer, 76 Party, <br>248 Politician, and 307 Political Pages</small></li>
+										<li>All the posts from January 2019 to April 2022<br><small>2,541,842 posts</small></li>
+									</ol></p>
+								</div>
+							</section>
+							<section data-background-size="100%" data-background-iframe="20220315_page.html" data-background-interactive>
+							</section>
+						</section>
+					 	<section>
+							<section>
+								<h3>Automated Content Analysis</h3>
+								<p><ol>
+									<li>Develop codebook based on current researches<small>(Cheng et al., 2022; Chung, 2020; Stokols, 2022; Poon and Tse, 2022; Tang, 2022)</small></li>
+									<li>GPT-5 mini</li>
+									<li>Validation<br><small>Accuracy: 0.72; Kappa: 0.69</small></li>
+								</ol></p>
+							</section>
+							<section>
+								<ol>
+								  <li>Non-Confrontational (General Public)</li>
+								  <li>Non-Confrontational (Opponent-Specific)</li>
+								  <li>Confrontational (Non-Violent)</li>
+								  <li>Confrontational (Violent)</li>
+								  <li>Digital Repertoires</li>
+								  <li>Economic Repertoires</li>
+								  <li>Community Support / Mutual Aid</li>
+								  <li>General Political Discussion (Hong Kong Domestic Politics)</li>
+								  <li>International Front</li>
+								  <li>Global Politics</li>
+								  <li>No Relevant Category</li>
+								</ol>
+							</section>
+							<section>
+								<img src="gptcost.png" width="30%">
+							</section>
+						</section>
+						<section>
+							<section>
+								<h3>Interrupted Time Series Analysis</h3>
+								Y=<i>b</i><small>0</small>+<i>b</i><small>1</small>T+<i>b</i><small>2</small>D+<i>b</i><small>3</small>P+e
+								<img src="its.png" width="70%">
+							</section>
+						</section>
+						<section>
+							<section>
+								<h3>Interrupted Time Series Analysis with ARIMA</h3>
+								<p>
+									  y<sub>t</sub>
+									  = &beta;<sub>1</sub> step<sub>t</sub>
+									  + &beta;<sub>2</sub> pulse<sub>t</sub>
+									  + &beta;<sub>3</sub> slope<sub>t</sub>
+									  + &epsilon;<sub>t</sub>,
+									</p>
+								<img src="arima.png" width="70%">
+								<small><small>Source: Schaffer, A.L., Dobbins, T.A. & Pearson, SA. (2021). Interrupted time series analysis using autoregressive integrated moving average (ARIMA) models: a guide for evaluating large-scale health interventions. BMC Med Res Methodol 21, 58.</small></small>
+							</section>
+							<section>
+								<img src="functions.png" width="30%">
+							</section>
+						</section>
+						<section>
+							<h2>(Preliminary) Findings</h2>
+						</section>
+						<section>
+							<h4>Posting Activity</h4>
+							<img src="page_trends.png" width="80%">
+						</section>
+						<section>
+						<section>
+							<img src="table3.png" width="60%">
+						</section>
+						<section>
+							<img src="politician_raw_trend.png" width="60%">
+						</section>
+						<section>
+							<img src="politpages_raw_trend.png" width="60%">
+						</section>
+						</section>
+						<section>
+							<h4>Topics</h4>
+							<img src="page_trends_bytopic.png" width="82%">
+						</section>
+						<section class="table-slide">
+						  <h3>ARIMA Intervention Effects by Page Type</h3>
+						  <div class="table-scroll">
+						    <table>
+						      <thead>
+						        <tr>
+						          <th>Type</th>
+						          <th>Step Effect<br>(p ; p<sub>placebo</sub>)</th>
+						          <th>Pulse Effect<br>(p ; p<sub>placebo</sub>)</th>
+						          <th>Slope Effect<br>(p ; p<sub>placebo</sub>)</th>
+						        </tr>
+						      </thead>
+						      <tbody>
+						        <tr>
+						          <td>Business</td>
+						          <td>-0.427<br>(0.990; NA)</td>
+						          <td>368.129<br>(0.184; NA)</td>
+						          <td>-0.367<br>(0.535; NA)</td>
+						        </tr>
+						        <tr>
+						          <td>Community</td>
+						          <td>-19.370*<br>(0.019; 0.211)</td>
+						          <td>118.640<br>(0.235; 0.225)</td>
+						          <td>0.240<br>(0.118; 0.465)</td>
+						        </tr>
+						        <tr>
+						          <td>Influencer</td>
+						          <td>-22.498<br>(0.577; NA)</td>
+						          <td>-113.362<br>(0.767; NA)</td>
+						          <td>0.044<br>(0.952; NA)</td>
+						        </tr>
+						        <tr>
+						          <td>Party</td>
+						          <td>-8.624<br>(0.189; NA)</td>
+						          <td>-72.544<br>(0.342; NA)</td>
+						          <td>0.078<br>(0.513; NA)</td>
+						        </tr>
+						        <tr>
+						          <td>Politician</td>
+						          <td><strong>-89.950***<br>(0.000; 0.056)</strong></td>
+						          <td><strong>518.126*<br>(0.031; 0.056)</strong></td>
+						          <td>0.553*<br>(0.048; 0.549)</td>
+						        </tr>
+						        <tr>
+						          <td>Politpages</td>
+						          <td>-80.871<br>(0.238; 0.352)</td>
+						          <td><strong>-1061.823.<br>(0.053; 0.085)</strong></td>
+						          <td>0.099<br>(0.928; 0.859)</td>
+						        </tr>
+						      </tbody>
+						    </table>
+						  </div>
+						</section>
+						<section>
+							<section class="table-slide">
+								<h3>Significant ARIMA + Placebo-Robust Intervention Effects</h3>
+								<div class="table-scroll">
+									<table>
+										<thead>
+											<tr>
+												<th>Page Type</th>
+												<th>Topic</th>
+												<th>Effect</th>
+												<th>Estimate</th>
+												<th>p</th>
+												<th>p<sub>placebo</sub></th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- Topic-level: Party -->
+											<tr>
+												<td>Party</td>
+												<td>No Relevant Category</td>
+												<td>Pulse</td>
+												<td>22.292</td>
+												<td>0.037</td>
+												<td>0.050</td>
+											</tr>
+
+											<!-- Topic-level: Politician -->
+											<tr>
+												<td>Politician</td>
+												<td>Confrontational (Non-Violent)</td>
+												<td>Pulse</td>
+												<td>-84.062</td>
+												<td>0.000</td>
+												<td>0.007</td>
+											</tr>
+											<tr>
+												<td>Politician</td>
+												<td>Confrontational (Violent)</td>
+												<td>Pulse</td>
+												<td>-50.496</td>
+												<td>0.023</td>
+												<td>0.035</td>
+											</tr>
+											<tr>
+												<td>Politician</td>
+												<td>Digital Repertoires</td>
+												<td>Pulse</td>
+												<td>-19.961</td>
+												<td>0.010</td>
+												<td>0.064</td>
+											</tr>
+
+											<!-- Topic-level: Politpages -->
+											<tr>
+												<td>Politpages</td>
+												<td>Non-Confrontational (General Public)</td>
+												<td>Pulse</td>
+												<td>-90.110</td>
+												<td>0.045</td>
+												<td>0.099</td>
+											</tr>
+											<tr>
+												<td>Politpages</td>
+												<td>Economic Repertoires</td>
+												<td>Pulse</td>
+												<td>-29.826</td>
+												<td>0.070</td>
+												<td>0.099</td>
+											</tr>
+
+											<!-- Topic-level: Business -->
+											<tr>
+												<td>Business</td>
+												<td>Non-Confrontational (General Public)</td>
+												<td>Pulse</td>
+												<td>-79.033</td>
+												<td>0.023</td>
+												<td>0.050</td>
+											</tr>
+
+											<!-- Topic-level: Community -->
+											<tr>
+												<td>Community</td>
+												<td>Non-Confrontational (Opponent-Specific)</td>
+												<td>Pulse</td>
+												<td>-8.435</td>
+												<td>0.046</td>
+												<td>0.071</td>
+											</tr>
+											<tr>
+												<td>Community</td>
+												<td>Confrontational (Non-Violent)</td>
+												<td>Pulse</td>
+												<td>-21.257</td>
+												<td>0.012</td>
+												<td>0.085</td>
+											</tr>
+											<tr>
+												<td>Community</td>
+												<td>Digital Repertoires</td>
+												<td>Pulse</td>
+												<td>-16.184</td>
+												<td>0.026</td>
+												<td>0.099</td>
+											</tr>
+											<tr>
+												<td>Community</td>
+												<td>No Relevant Category</td>
+												<td>Pulse</td>
+												<td>98.335</td>
+												<td>0.004</td>
+												<td>0.043</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+							<section>
+								<img src="table4.png" width="60%">
+							</section>
+							<section>
+								<img src="table5.png" width="60%">
+							</section>
+							<section>
+								<img src="table6.png" width="60%">
+							</section>
+							<section>
+								<img src="table7.png" width="60%">
+							</section>
+							<section>
+								<img src="table8.png" width="60%">
+							</section>
+							<section>
+								<img src="table9.png" width="60%">
+							</section>
+						</section>
+						<section>
+							<h3>Question: <br>How should we make sense of the results?</h3>
+						</section>
+						<section>
+							<h3>Group Discussion</h3>
+							<p><ol>
+								<li>Slides: <a href="https://bit.ly/ntu1203">https://bit.ly/ntu1203</a></li>
+								<li>Discuss: <br>What does the results mean, both for Hong Kong politics and political communication?</li>
+								<li>Report Back</li>
+							</ol></p>
+						</section>
+						<section>
+							<h3>Takeaways</h3>
+						</section>	
+						<section>
+							<h3>Heterogeneous Effects of Repression</h3>
+							<ul>
+								<li>Non-uniform changes across actors or page types</li>
+								<li>Politician & political pages show clear short‑term contractions in sensitive topics</li>
+								<li>Business and influencer show no measurable intervention effects</li>
+							</ul>
+						</section>
+
+
+						<section>
+							<h3>Strategic Topic Avoidance</h3>
+							<ul>
+								<li>Repression shifts <em>what</em> actors discuss rather than eliminating discussion</li>
+								<li>Actors avoid high‑risk or politically sensitive topics <br><small>(confrontational and non-confrontational collective actions)</small></li>
+								<li>Safer forms of expression persist. Tactical adaptation under repression?*</li>
+							</ul>
+						</section>
+						<section>
+							<h3>Abeyance Dynamics</h3>
+							<ul>
+								<li>Despite declining sensitive content, overall activity does not collapse post‑NSL</li>
+								<li>“No Relevant Category” content increases</li>
+								<li>Online activity preserves networks and communicative continuity</li>
+								<li>Dissent moves into the background, not necessarily disappearing</li>
+							</ul>
+						</section>
+						<section>
+							<img src="hkfire1.jpg" width="70%">
+						</section>
+						<section>
+							<img src="hkfire2.png" width="40%">
+						</section>
+						<section>
+							<h3>No Evidence of Tactical Radicalisation</h3>
+							<ul>
+								<li>Post‑NSL environment shows little or no tactical escalation</li>
+								<li>Confrontational and tactical discussions contract rather than rise</li>
+								<li>Violent or confrontational discourse remains low or declines further</li>
+							</ul>
+						</section>
+						<section>
+						<section>
+							<h3>Rethinking the role of the National Security Law</h3>
+							<ul>
+								<li>Are political researchers asking the wrong question?</li>
+								<li>Is the NSL the <em>cause</em> or <em>consequences</em>?</li>
+								<li>Formalises coercive dynamics <em>already</em> in place</li>
+								<li>But <em>when</em> did the repressive effect first take place?</li>
+							</ul>
+						</section>
+						<section>
+							<h4>Party</h4>
+							<img src="party_convio_raw_trend.png" width="70%">
+						</section>
+						<section>
+							<h4>Topics</h4>
+							<img src="page_trends_bytopic.png" width="82%">
+						</section>
+						</section>
+						<section>
+							<h2>Future Directions</h2>
+						</section>
+						<section>
+							<p><ol>
+								<li>Another 2.5 million posts (media and pro-China)</li>
+								<li>Exploring the <em>when</em> question</li>
+							</ol></p>
+						</section>
+						<section>
+							<h2>Thank You!</h2>
+							<p>LinkedIn: justinchuntingho<br>Github: justinchuntingho<br>Email: jcho@nycu.edu.tw</p>
+						</section>
+				</div>
+			</div>
+
+			<script src="dist/reveal.js"></script>
+			<script src="plugin/notes/notes.js"></script>
+			<script src="plugin/markdown/markdown.js"></script>
+			<script src="plugin/highlight/highlight.js"></script>
+			<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+				Reveal.initialize({
+					hash: true,
+					slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+					plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				});
+			</script>
+		</body>
+		</html>
